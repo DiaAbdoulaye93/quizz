@@ -1,0 +1,393 @@
+body{
+    background-image: url('../img/img-bg.jpg');
+    font-family:'Open Sans';
+    background-size:cover;
+    background-repeat:none
+}
+.content{
+
+    margin-top:-20px;
+    background-image: url('../img/img-bg.jpg');
+    background-size:cover;
+    height:750px; 
+    margin-left:10px;
+   
+}
+#Principal,#Principal_incription,#tableau{
+background-color: #f8fdfd;
+margin-top:5%;
+margin-left:10%;
+width:80%;
+}
+#Principal{
+    width:60%;
+    margin-left: 20%
+}
+#Principal_incription,#Principal_incription_creat_user{
+margin-top:3%;
+height:630px;
+border-radius:5%;
+background-color: white;
+border:2px solid #f8fdfd;
+}
+
+#haut{
+    background-color: #51bfd0;
+    height:90px;
+    padding-top:10px;
+    padding-left:5%
+}
+#bas{
+    height:350px;
+    background-color:#f8fdfd
+}
+#bas_inscription
+{
+    height:515px;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius:3%;
+    border:2px solid gainsboro;
+}
+#username,#passeword,#connection{
+    margin-top:5%;
+    width:85%;
+     margin-left: 3%;
+    height:70px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    border: 2px solid gainsboro;
+    border-radius:5px;
+    padding-top:1.5%;
+    padding-left: 5%;
+  
+   
+}
+#user,#pwd{
+    
+    width:85%; 
+    border: none;
+    font-size:20px;
+    background-color:whitesmoke
+     
+}
+#connection,#deconnexion{
+    border:none;
+}
+#button,#button_inscription,#deconnexion{
+    height:60px;
+    width:25%;
+    border-radius:5%;
+    background-color: deepskyblue;
+    color: white;
+    font-size:20px;
+    
+}
+#button_inscription {
+    height:40px;
+    width:35%;
+    border-radius:3%;
+}
+#deconnexion{
+    position: absolute;
+   margin-left: 67%;
+   border-radius:3%;
+   margin-top:-5%;
+   background-color: rgb(0, 255, 234);
+   height:35px;text-align:center;padding-top:1%;
+   width:20%;
+}
+
+
+#button_inscription{
+    border-radius:8%;
+     width:20%;
+     margin-left:20%
+}
+h3{
+    color:white;
+
+}
+a{
+    text-decoration: none;
+   
+}
+input,span,h5,a{
+    color:grey;
+}
+h2{
+    margin-left:35%;
+    margin-top:-7%
+}
+h1,#h2_creat_quizz{
+    margin-top: -10%;
+    color:honeydew
+}
+ #entete{
+     background-color:rgb(6, 21, 22); 
+    padding-top: 2%;
+     height:100px;
+     margin-top:-2%;
+     margin-left:0px;
+     width: 100%
+ }
+ #text-entete{
+     margin-left:40%;
+     margin-top:-6%;
+     font-family: 'Open Sans';
+ }
+ 
+  input,span{
+      margin-left:5%;
+      width:50%;
+      border-radius:3%;
+     
+      
+       }
+       input{
+        border:2px solid  gainsboro;
+        height:50px;
+    border-radius:3%
+       }
+       #inscription
+       {
+       
+        height:60px;
+        padding-top:10px;
+        
+        border-bottom:2px solid gainsboro
+       }
+        h5{
+        margin-top:-3%;
+        margin-left:3%;
+
+       }
+       #h2_inscription{
+           margin-top:0%;
+           margin-left:2%;
+       }
+#imag{
+    width:17.5%;
+    margin-left:26%;
+    height: 20px;
+    background-color: deepskyblue;
+   
+}
+#div_principal_cr_admin{
+    margin-top: 2%;
+}
+ 
+#tableau{
+    margin-top: 1%;
+    height:500px;
+    width:100%;
+    font-size:20px;
+    background-color:white;
+}
+table{
+    font-family: 'Open Sans';
+    font-size:20px;
+    width:100%;
+    border-radius:5%;
+    border:2px solid rgb(22, 211, 224);
+    background-color:white;
+    text-align: center;
+    height: 600px;
+    color:#818181;
+    
+}
+thead{
+  
+width:100%;
+height:100px;
+ 
+}
+td{
+ 
+margin-left:10%;
+font-size:100%;
+color:#818181;
+font-family: 'Open Sans'
+ 
+}
+tr{
+    border:2px solid black;
+}
+
+
+#h2_creat_quizz{
+    font-family:'Open Sans';
+    margin-left:20%;
+   margin-top:3%;
+    
+}
+#Principal_incription_creat_user{
+   
+    margin-left: 0px;
+        width:100%;
+
+}
+ 
+ 
+.titre{
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color:#818181;
+    font-size: 110%;
+    
+}
+#div_gauche_create_user{
+    float: left;
+    margin-left:1%;
+    margin-top: 5%;
+    width:40%;
+    border-radius:5%;
+    background-color:rgb(245, 245, 245);
+
+}
+#div_img_cr_user{
+    background-color:#51bfd0;
+    margin-top:7%;
+    height:200px;
+    padding-top:5%;
+    padding-left: 5%
+}
+#gauch_cr_user_bas{
+    background-color: whitesmoke;
+    font-size:20px;
+    padding-top:5%;
+    padding-left:5%;
+}
+#d1,#d2,#d3,#d4{
+width:95%;
+height:50px;
+padding-top: 3%
+}
+#d1:hover,#d2:hover,#d3:hover,#d4:hover{
+background-color: gainsboro
+}
+#icon_gauch1,#icon_gauch2,#icon_gauch3,#icon_gauch4{
+float: right;
+width:8%;
+height: 30px;
+}
+ 
+#prev{
+    float: right;
+  
+     margin-top:2%
+    
+ }
+ #im,#im_ad{
+    margin-left:-10%;
+    width:300px;
+     height:300px;
+     border-radius:50%;
+     border:5px solid  rgb(25, 165, 247);
+ }
+ #nom_prenom{
+    margin-left:37%;
+    font-style: bold;
+    font-size:20px;
+    margin-top:-30%
+ }
+ #nom_avatar{
+     margin-top:-10%;
+     margin-left:10%;
+ }
+ #div_nom_prenom_joueur{
+    margin-left:-10%; margin-top:-13%
+ }
+.error-form{
+    color:red;
+    font-weight:bold;
+ }
+ #partie_droite_admin{
+     margin-top: 3%;
+     margin-left:42%;
+     background-color:#f8fdfd;
+     padding-top:30px;
+     padding-left: 15%;
+     width:40%;
+     border-radius:2%;
+ }
+ .affichage_joueurs{
+     width:100%;
+     margin-left:-25%;
+     background-color:white;
+ }
+ .list_questions{
+      
+    margin-left:-20%;
+    width:100%;
+    height:700px;
+    font-family:'Open Sans';
+    font-weight:bold;
+    color:#818181;
+
+    
+ }
+ .nbr_question{
+     margin-left:40%;
+   
+ }
+ .val_question,.button_question{
+     width:10%;
+     height: 30px;
+     font-weight:bold;
+      font-size:18px;
+      margin-left:0%;
+      width:15%;
+ }
+ .button_question{
+     margin-left:0%;
+     height:36px;
+    background-color:#5e90af;
+    color:#f8fdfd;
+    width:12%;
+ }
+ .questions{
+     margin-top:2%;
+     width:100%;
+     height:600px;
+     border:2px solid #818181;
+     border-radius:5%;
+ }
+.Q1{
+margin-top: 2%
+ }
+ input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+.checkbox{
+ margin-top:5%;
+ margin-left:3%;
+width:2%;
+height:10px;
+border:2px solid #40f8f8
+ }
+ input[type="checkbox"]:checked {
+    background: grey;
+  
+  }
+  #c4,#c5{
+     
+border-radius:80%;
+
+  }
+.spans{
+    color:black;
+    margin-left:1%;
+}
+.suivant{
+    font-family: "Open Sans";
+    color:white;
+    font-size:22px;
+    background-color: #3addd6;
+    margin-top:5%;
+    float:right;
+    width:25%;
+    height: 40px;
+    border:none;
+
+}

@@ -1,0 +1,6 @@
+[
+    {"prenom":"Thierno","nom":"Kane","login":"Priper","pass":"thier","passconfirm":"thier","image":" joueur.png","profil":"joueur"},
+    {"prenom":"Lazy","nom":"Jazzy","login":"Lazy123","pass":"oumou","passconfirm":"oumou","image":" admin.png","profil":"admin"}
+   
+ 
+]
