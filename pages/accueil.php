@@ -71,13 +71,13 @@ Creer Questions
         switch($_GET['lien1'])
         {
             case "questions":
-           include("questions.php");
+           require_once("questions.php");
             break;
             case "joueurs":
-            include("../pages/joueurs.php");
+            require_once("../pages/joueurs.php");
             break;
             case "inscription1":
-            include("../pages/inscription_admin.php");
+            require_once("../pages/inscription.php");
             break;
             
         }

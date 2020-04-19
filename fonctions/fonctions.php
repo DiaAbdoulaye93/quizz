@@ -5,7 +5,8 @@ function getData($file="creation_user"){
     $data=json_decode($data,true);
     return $data;
 }
-
+ 
+ 
 function connexion($pseudo,$pass){
 $users=getData();
  
@@ -41,6 +42,7 @@ function is_connect()
     {
         header("location:index.php");
     }
+
 }
 
 

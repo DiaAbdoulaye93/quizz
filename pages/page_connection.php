@@ -102,14 +102,14 @@ if(isset($_POST["connection"]))
        <div id="username">
            <input type="text" name="user" id="user" error="error-1"  placeholder="Login" value="<?php echo $pseudo ?>">
            <img src="../img/icônes/ic-login.png" alt="" id="usericone">
-           <span style='color:red' ><?php //echo $message ?></span>
+           <span style='color:red' ><?php  echo $message ?></span>
          <div class="error-form" id="error-1"></div>
        </div>
        <div id="passeword">
-           <input type="text" name="pwd" id="pwd" error="error-2"  placeholder="Password"  value="<?php echo $pass ?>">
+           <input type="password" name="pwd" id="pwd" error="error-2"  placeholder="Password"  value="<?php echo $pass ?>">
            <img src="../img/icônes/ic-password.png" alt="">
           <div class="error-form" id="error-2"></div> 
-          <span style='color:red'><?php //echo $message1 ?></span>
+          <span style='color:red'><?php  echo $message1 ?></span>
         
        </div>
 <span style='color:red;font-weight:bold;margin-left:30%'><?php echo $echec ?></span>

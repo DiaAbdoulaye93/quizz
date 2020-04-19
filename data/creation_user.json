@@ -1,6 +1,1 @@
-[
-    {"prenom":"Thierno","nom":"Kane","login":"Priper","pass":"thier","passconfirm":"thier","image":" joueur.png","profil":"joueur"},
-    {"prenom":"Lazy","nom":"Jazzy","login":"Lazy123","pass":"oumou","passconfirm":"oumou","image":" admin.png","profil":"admin"}
-   
- 
-]
+[{"prenom":"DJIBRIL","nom":"Dia","login":"fall","pass":"OUMOU","passconfirm":"OUMOU","image":"admin.png","score":0,"profil":"admin"},{"prenom":"Astou","nom":"Faye","login":"Lazy","pass":"oumou","passconfirm":"oumou","image":"     joueur.jpeg","profil":"admin"},{"prenom":"Abdoulaye","nom":"Faye","login":"laye","pass":"oumou","passconfirm":"oumou","image":"admin.png","score":0,"profil":"joueur"}]

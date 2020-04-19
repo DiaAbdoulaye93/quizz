@@ -14,7 +14,8 @@
                 <th>Score</th>
          </thead>
          <tbody>  
-        <?php  for ($i=0; $i <count($List_users); $i++): ?>
+        <?php   
+        for ($i=0; $i <count($List_users); $i++): ?>
             <tr>
                 <td><?php echo $List_users[$i]['nom']?> </td>
                 <td><?php  echo $List_users[$i]['prenom']?></td>
