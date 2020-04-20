@@ -1,7 +1,7 @@
 <?php
 is_connect();
  
- $List_users=getData("liste_joueurs");
+ $List_users=getData();
 
 ?>
  
@@ -27,13 +27,17 @@ window.onload=function()
         {
             if(div.target.id=='top_score')
             {
-                
+                mon_score.style.background="rgb(245, 245, 245)";
+                top_score.style.background="#f8fdfd";
                 affiche_MonScore.style.display="none";   
                 affiche_topScores.style.display="block";
+           
             }
 
             if(div.target.id=='mon_score')
             {
+                mon_score.style.background="#f8fdfd";
+                top_score.style.background="rgb(245, 245, 245)";
                 affiche_topScores.style.display="none";
                 affiche_MonScore.style.display="block";  
                
@@ -69,22 +73,40 @@ window.onload=function()
 
        </div>
        <div class="joueur_bas_droite">
-       <div class="top_score" id="top_score">
-                Top scores 
-                <div class="affiche_topScores" id="affiche_topScores">
-                    
-                </div>
-            </div>
+           <div class="entete_score">
+              <div class="top_score" id="top_score">
+                  Top scores 
+               
+               </div>
 
               <div class="mon_score" id="mon_score">
-              Mon meilleur score
+                  Mon meilleur score
+              </div>
+           </div>
+     
+              <div class="afficher_les_Scores">
+              <div class="affiche_topScores" id="affiche_topScores">
+                  <h1 class="h1_top5_score">Top 5 scores</h1>
+                <?php
+                rsort($List_users );
+        for ($i=0; $i <=5; $i++): 
+        if ("joueur"==$List_users[$i]['profil'])
+         {
+             echo   '<h2 class="h2_top5_scores">'.$List_users[$i]['prenom'].'  '.$List_users[$i]['nom'].'<span style="text-decoration:underline;color:black">'.$List_users[$i]['score'].'   pts  </span> </h2>';
+              
+         }  
+           endfor; ?>
+            
+              </div>
+            
                 <div class="affiche_MonScore" id="affiche_MonScore" >
                 <?php 
-               echo  $_SESSION["user"]['score']." pts" ;         
+               echo "Votre meilleur Score est actuellement:  ".$_SESSION["user"]['score']." pts" ;         
                   ?> 
-                </div>
-            </div>
-       </div>
+           </div>
+      </div>
+    </div>
+      
   </div>
 </div> 
  
