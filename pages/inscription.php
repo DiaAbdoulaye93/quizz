@@ -18,7 +18,7 @@
                 { 
                     if($pass==$passconfirm)
                     {
-                        $target_dir ='../img/avatar/';
+                        $target_dir ='img/avatar/';
                         $fch = $target_dir.basename($_FILES['imag']["name"]);
                         $image= $_FILES['imag']["name"];
                         $extension = new SplFileInfo($image);
@@ -41,7 +41,7 @@
                                      {
                                         $informations['score']=0;
                                           $informations['profil']="joueur";
-                                          $js=file_get_contents('../data/creation_user.json');
+                                          $js=file_get_contents('data/creation_user.json');
                                           $js= json_decode($js,true);
                                           for ($i=0; $i <count( $js) ; $i++) { 
                                             if($login==$js[$i]['login'])
@@ -58,7 +58,7 @@
     
                                             $js[]=$informations;
                                             $js=json_encode($js);
-                                            file_put_contents('../data/creation_user.json',$js);     
+                                            file_put_contents('data/creation_user.json',$js);     
                                             echo "<script> alert('Inscription reussie')</script>";  
                                          echo "<meta http-equiv='refresh' content='0.5;url=index.php'/>";
                                         }
@@ -69,7 +69,7 @@
                                  else
                                      {
                                           $informations['profil']="admin";
-                                          $js=file_get_contents('../data/creation_user.json');
+                                          $js=file_get_contents('data/creation_user.json');
                                           $js= json_decode($js,true);
                                         for ($i=0; $i <count( $js) ; $i++) { 
                                            if($login==$js[$i]['login'])
@@ -83,10 +83,10 @@
                                   else{
                                     $js[]=$informations;
                                     $js=json_encode($js);
-                                    file_put_contents('../data/creation_user.json',$js);     
+                                    file_put_contents('data/creation_user.json',$js);     
                                     echo "<script> alert('Inscription reussie')</script>";  
                                  
-                                   require_once("../pages/accueil.php");
+                                   require_once("pages/accueil.php");
                                    }
                                   }
                                     
@@ -147,7 +147,7 @@
 
  <div id="bas_inscription">
    <div id="prev">
-        <img  alt="" src="../img/avatar/avatar.jpg"  id="im" > 
+        <img  alt="" src="img/avatar/avatar.jpg"  id="im" > 
         <h3>
           <?php
       

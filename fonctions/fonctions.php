@@ -1,7 +1,7 @@
 <?php
 session_start();
 function getData($file="creation_user"){
-    $data=file_get_contents("../data/".$file.".json");
+    $data=file_get_contents("data/".$file.".json");
     $data=json_decode($data,true);
     return $data;
 }

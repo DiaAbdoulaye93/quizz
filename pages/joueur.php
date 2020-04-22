@@ -54,7 +54,7 @@ window.onload=function()
      <div style="float:left; width:15%" >
        <div>
             <?php 
-                echo '<img src="../img/avatar/'.$_SESSION["user"]['image'].'" alt=""   style="width:50% ;height:70px; border-radius:60%;margin-top:0%">';
+                echo '<img src="img/avatar/'.$_SESSION["user"]['image'].'" alt=""   style="width:50% ;height:70px; border-radius:60%;margin-top:0%">';
             ?>
         </div>
         <div id= "div_nom_prenom_joueur" >

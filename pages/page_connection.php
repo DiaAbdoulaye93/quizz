@@ -90,7 +90,7 @@ if(isset($_POST["connection"]))
     <title>Page Connection</title>
 </head>
 <body >
-<?php //include("entete.php");
+<?php  
 ?>
 <form   action="" method="post"  id="form-connexion">
    <div id="Principal">
@@ -101,13 +101,13 @@ if(isset($_POST["connection"]))
    <div id="bas">
        <div id="username">
            <input type="text" name="user" id="user" error="error-1"  placeholder="Login" value="<?php echo $pseudo ?>">
-           <img src="../img/icônes/ic-login.png" alt="" id="usericone">
+           <img src="img/icônes/ic-login.png" alt="" id="usericone">
            <span style='color:red' ><?php  echo $message ?></span>
          <div class="error-form" id="error-1"></div>
        </div>
        <div id="passeword">
            <input type="password" name="pwd" id="pwd" error="error-2"  placeholder="Password"  value="<?php echo $pass ?>">
-           <img src="../img/icônes/ic-password.png" alt="">
+           <img src="img/icônes/ic-password.png" alt="">
           <div class="error-form" id="error-2"></div> 
           <span style='color:red'><?php  echo $message1 ?></span>
         

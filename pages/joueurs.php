@@ -1,6 +1,6 @@
 <?php   
  $List_users=getData();
-
+$comp=$res=0;
 ?>
 <div class="listusers" id="listusers">
     <div class="titre">LISTE DES JOUEURS PAR SCORE</div>
@@ -28,15 +28,16 @@ else{
         $nbrparPage=15;
         $total=count($List_users);
         $nombredepages= ceil($total/$nbrparPage);
-        $_SESSION['users'] =$List_users;
+       // $_SESSION['users'] =$List_users;
        $min=($page-1)*$nbrparPage;
         $max=$min+$nbrparPage-1;
         
           rsort($List_users);
        
         for ($i=$min; $i<=$max; $i++): 
-        if ("joueur"==$List_users[$i]['profil']) {
-           
+        if ("joueur"==$List_users[$i]['profil'] && ""!=$List_users[$i]['nom']) {
+           $comp++;
+          
            ?>
             <tr> 
             <td><?php echo $List_users[$i]['nom']?> </td>
@@ -44,11 +45,35 @@ else{
             <td><?php  echo $List_users[$i]['score']?> pts</td>
         </tr>
       
-         <?php }  endfor; ?>
+         <?php } 
+         else{
+             break;
+         }
+         endfor; 
+         ?>
          </tbody>
      </table>
-     <div class="paginate-liste-zone">
-        <button type="submit" name="suivant" class="suivant" id="suivant"><a href="index.php?lien=accueil&lien1=joueurs&page=<?= $page+1?>">SUIVANT</a></button>
+     <div>
+     <?php
+     if($page>1)
+     {
+         ?>
+         
+                      <button type="submit" name="precedent" class="precedent" id="precedent"><a href="index.php?lien=accueil&lien1=joueurs&page=<?= $page-1?>">PRECEDENT</a></button>
+        <?php  }   
+        else{
+            echo "";
+        } 
+        if($comp<$nbrparPage)
+        echo "";
+        else{
+            ?>
+                       <button type="submit" name="suivant" class="suivant" id="suivant"><a href="index.php?lien=accueil&lien1=joueurs&page=<?= $page+1?>">SUIVANT</a></button>
+
+            <?php  
+            } 
+            ?>
+       
         </div>
     
     </div>

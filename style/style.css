@@ -104,7 +104,7 @@ border:2px solid #f8fdfd;
 }
 
 
-#button_inscription{
+#button_inscription,#suivant{
     border-radius:8%;
      width:20%;
      margin-left:20%
@@ -180,6 +180,7 @@ h1,#h2_creat_quizz{
 }
 #div_principal_cr_admin{
     margin-top: 2%;
+    height: 900px;
 }
  
 #tableau{
@@ -390,7 +391,7 @@ border-radius:80%;
     color:black;
     margin-left:1%;
 }
-.suivant{
+.suivant,.precedent{
     font-family: "Open Sans";
     color:white;
     font-size:22px;
@@ -399,8 +400,13 @@ border-radius:80%;
     float:right;
     width:25%;
     height: 40px;
-    border:none;
+    font-weight:bold;
+  
 
+}
+.precedent{
+    background-color: #dd3a5d;
+    float: left;
 }
 #div_principal_user{
     margin-top:1%;
@@ -483,3 +489,4 @@ height: 40px;
     margin-top:0%;
 
 }
+ 

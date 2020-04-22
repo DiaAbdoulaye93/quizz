@@ -19,7 +19,7 @@
 <div id="div_img_cr_user">
     <div style="border:1px solid rgb(112, 108, 57); width:30% ;height:150px; border-radius:50%;padding-top:1%;padding-left:3%">
         <?php 
-         echo '<img src="../img/avatar/'.$_SESSION["user"]['image'].'" alt=""   style="width:90% ;height:130px; border-radius:50%;margin-top:5%">';
+         echo '<img src="img/avatar/'.$_SESSION["user"]['image'].'" alt=""   style="width:90% ;height:130px; border-radius:50%;margin-top:5%">';
             ?>
     </div>
     <div id= "nom_prenom">
@@ -36,27 +36,27 @@
     <span>
 Liste des Questions
     </span>
-    <a href="index.php?lien=accueil&lien1=questions"> <img id="icon_gauch1" src="../img/icônes/ic-liste.png" alt="" ></a>
+    <a href="index.php?lien=accueil&lien1=questions"> <img id="icon_gauch1" src="img/icônes/ic-liste.png" alt="" ></a>
 </div>
 
 <div id="d2">
     <span>
 Creer un Admin
     </span>
-    <a href="index.php?lien=accueil&lien1=inscription1"><img id="icon_gauch2" src="../img/icônes/ic-ajout-active.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=inscription1"><img id="icon_gauch2" src="img/icônes/ic-ajout-active.png" alt=""></a>
 </div>
 
 <div id="d3">
     <span>
 Liste des joueurs
     </span>
-    <a href="index.php?lien=accueil&lien1=joueurs"><img id="icon_gauch3" src="../img/icônes/ic-liste.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=joueurs"><img id="icon_gauch3" src="img/icônes/ic-liste.png" alt=""></a>
 </div>
 <div id="d4">
     <span>
 Creer Questions
     </span>
-    <a href=""> <img id="icon_gauch4" src="../img/icônes/ic-ajout.png" alt=""></a>
+    <a href=""> <img id="icon_gauch4" src="img/icônes/ic-ajout.png" alt=""></a>
 </div>
 
 </div>
@@ -74,16 +74,16 @@ Creer Questions
            require_once("questions.php");
             break;
             case "joueurs":
-            require_once("../pages/joueurs.php");
+            require_once("pages/joueurs.php");
             break;
             case "inscription1":
-            require_once("../pages/inscription.php");
+            require_once("pages/inscription.php");
             break;
             
         }
     }
     else{
-        include("../pages/joueurs.php");
+        include("pages/joueurs.php");
   
     }
    
