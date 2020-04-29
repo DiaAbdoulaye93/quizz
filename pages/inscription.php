@@ -125,7 +125,7 @@
         reader.readAsDataURL(event.target.files[0]);
     }
 </script>
-<form action="" method="post" id="form-inscription" enctype="multipart/form-data">
+<form action="" method="post" id="form1" enctype="multipart/form-data">
  <div id="Principal_incription">
   <div id='inscription'>
     <h2 id='h2_inscription'>S'INSCRIRE</h2> 
@@ -212,7 +212,7 @@ for(input of inputs){
      
     })
 }
-document.getElementById("form-inscription").addEventListener("submit",function(e){
+document.getElementById("form1").addEventListener("submit",function(e){
     const inputs=document.getElementsByTagName("input");
     var error=false;
     for(input of inputs){

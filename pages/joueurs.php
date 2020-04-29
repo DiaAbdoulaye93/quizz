@@ -28,7 +28,6 @@ else{
         $nbrparPage=15;
         $total=count($List_users);
         $nombredepages= ceil($total/$nbrparPage);
-       // $_SESSION['users'] =$List_users;
        $min=($page-1)*$nbrparPage;
         $max=$min+$nbrparPage-1;
         

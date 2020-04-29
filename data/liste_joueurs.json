@@ -1,16 +1,9 @@
-[
-    {"prenom":"Thierno","nom":"Kane","score":"300"},
-    {"prenom":"Aly","nom":"NIANG","score":"100"},
-    {"prenom":"Samba","nom":"Fall","score":"300"},
-    {"prenom":"DJOGOP","nom":"Faye","score":"200"},
-    {"prenom":"SORY","nom":"Mackalou","score":"300"},
-    {"prenom":"DIJIBRIL","nom":"DIA","score":"100"},
-    {"prenom":"Thierno","nom":"Kane","score":"500"},
-    {"prenom":"DIJIBRIL","nom":"DIA","score":"100"},
-    {"prenom":"Thierno","nom":"Kane","score":"30"},
-    {"prenom":"Fatmata","nom":"Diallo","score":"100"},
-    {"prenom":"Diéz","nom":"Coly","score":"900"},
-    {"prenom":"DIJIBRIL","nom":"DIA","score":"600"}
-      
+[ 
+    {
+        "question":"",
+        "nbr_de_points":"",
+        "type_de_reponse":"",
+        "reponse":""
+    }
  
 ]

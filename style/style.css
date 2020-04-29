@@ -181,6 +181,7 @@ h1,#h2_creat_quizz{
 #div_principal_cr_admin{
     margin-top: 2%;
     height: 900px;
+    background-color: rgb(214, 214, 213);
 }
  
 #tableau{
@@ -236,13 +237,18 @@ tr{
 }
  
  
-.titre{
+.titre,.titre_creat_question{
     font-weight: bold;
     font-family: 'Open Sans';
     color:#818181;
     font-size: 110%;
     margin-left:25%;
     
+}
+.titre_creat_question{
+color:#51bfd0;
+font-size:35px;
+margin-left:5%;
 }
 #div_gauche_create_user{
     float: left;
@@ -356,12 +362,20 @@ height: 30px;
     color:#f8fdfd;
     width:12%;
  }
- .questions{
+ .questions,.cr_questions{
      margin-top:2%;
      width:100%;
      height:600px;
      border:2px solid #818181;
      border-radius:5%;
+ }
+ .cr_questions{
+    border:2px solid #5e90af;
+    width:98%;
+    font-weight:bold;
+    font-size:20px;
+    color:#818181;
+    padding-left:2%
  }
 .Q1{
 margin-top: 2%
@@ -391,7 +405,7 @@ border-radius:80%;
     color:black;
     margin-left:1%;
 }
-.suivant,.precedent{
+.suivant,.precedent,.enregistrer{
     font-family: "Open Sans";
     color:white;
     font-size:22px;
@@ -489,4 +503,53 @@ height: 40px;
     margin-top:0%;
 
 }
+.espace_question{
+    width:80%;
+    height:120px;
+    background-color:#f8fdfd;
+    margin-left: 1%;
+    margin-top:1%;
+    border-right:2px solid #40f8f8;
+    border-radius:2%
+}
+ .nombre_de_points,.type_de_reponse,.affiche_question{
+ margin-top: -6%;
+ }
+.pts{
+   
+    width:13%;
+    height:40px;
+    color:#40f8f8;
+    font-weight: bold;
+    border:none;
+    font-size: 1.2em;
+    border-bottom:1px solid #40f8f8;
+    border-right:1px solid #40f8f8;
+}
+.liste_type_reponses{
+    width:63%;
+    height:60px;
+    margin-left:3%;
+    border:none;
+    font-size: 1.2em;
+    border-bottom:1px solid #40f8f8;
+    border-right:1px solid #40f8f8;
+    color:#818181;
+}
  
+ #ic_supprimer{
+    background-image:url('../img/Icônes/ic-ajout-réponse.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:8%;
+    height: 60px;
+    float:right;
+    margin-top:-13%
+  
+ }
+ .enregistrer{
+ 
+ margin-top:2%;
+ font-weight: inherit;
+ margin-left:10%
+ }

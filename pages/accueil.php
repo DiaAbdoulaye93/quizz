@@ -8,9 +8,9 @@
 </head>
 <body>
   
-<form action="" method="POST" enctype="multipart/form-data">
-    <div id="div_principal_cr_admin" style="background-color:#f8fdfd">
-<div id=haut>
+<form action="" method="POST" id="form1"   enctype="multipart/form-data">
+    <div id="div_principal_cr_admin" >
+<div id="haut">
 <h2 id="h2_creat_quizz">CREER ET PARAMETRER VOS QUIZZ</h2>
 <a href="index.php?statut=logout" id="deconnexion">Deconnexion</a>
 </div>
@@ -56,7 +56,7 @@ Liste des joueurs
     <span>
 Creer Questions
     </span>
-    <a href=""> <img id="icon_gauch4" src="img/icônes/ic-ajout.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=creer_questions"> <img id="icon_gauch4" src="img/icônes/ic-ajout.png" alt=""></a>
 </div>
 
 </div>
@@ -78,6 +78,9 @@ Creer Questions
             break;
             case "inscription1":
             require_once("pages/inscription.php");
+            break;
+            case "creer_questions":
+            require_once("pages/creation_questions.php");
             break;
             
         }
