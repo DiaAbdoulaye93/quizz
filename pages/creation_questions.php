@@ -28,15 +28,20 @@ if(isset($_POST['enreg'])){
                        else if($type_reponse=="choix2"){
                         $question['type']="choix_simple";
                       $compteur=0;
+                   $reponses=array();
                         while(isset($_POST['texte'.$i]))
                           { 
+                           
                               if(isset($_POST['radio'.$i])){
                            $compteur++ ;
-                                $question['bonne_reponse'][]=$_POST['texte'.$i];
+                                $reponses["valeur"]=$_POST['texte'.$i];
+                                $reponses["valide"]="oui";
                               }
                               else{
-                                $question['Mauvaise_reponse'][]=$_POST['texte'.$i];
+                                $reponses["valeur"]=$_POST['texte'.$i];
+                                $reponses["valide"]="non";
                               }
+                              $question['reponse'][]=$reponses;
                               $i++;
                           }  
                          if($compteur !=1)
@@ -44,30 +49,32 @@ if(isset($_POST['enreg'])){
                              $error="Cocher une seule reponse pour valider votre question";
                          }
                          else{
+                        
                             $question['points']= $_POST["points"]; 
                             $js[]=$question;
                             $js=json_encode($js);
                             file_put_contents('data/questions.json',$js);     
                             echo "<script> alert('Question ajouté')</script>";  
                             echo "<meta http-equiv='refresh' content='0.5;url=index.php?lien=accueil&lien1=creer_questions'/>";
-                        
                          }
-                            
-
                        } 
                        else if($type_reponse=="choix3"){
                         $question['type']="choix_multiple";
+                        $reponses=array();
                         $compteur1=0;
                         while(isset($_POST['texte'.$i]))
                           {
-
+                            
                               if(isset($_POST['check'.$i])){
                                $compteur1++;
-                                $question['bonne_reponse'][]=$_POST['texte'.$i];
+                               $reponses["valeur"]=$_POST['texte'.$i];
+                               $reponses["valide"]="oui";
                               }
-                              else{
-                                $question['Mauvaise_reponse'][]=$_POST['texte'.$i];
-                              }
+                             else{
+                                $reponses["valeur"]=$_POST['texte'.$i];
+                                $reponses["valide"]="non";
+                             }
+                             $question['reponse'][]=$reponses;
                               $i++;
 
                           }
@@ -97,11 +104,10 @@ if(isset($_POST['enreg'])){
    } else{
     $message_question="Rensigner votre question";
    }
-  
 }
  ?>
 
- <form method="post" id="form1" name="myform" onsubmit="return validate()">
+ <form method="post" id="form1" name="myform" >
 <div class="principal_creat_question" id="principal_creat_question"  >
     <div class="titre_creat_question">PARAMETRER VOTRE QUESTION</div>
     <div class="cr_questions"  id="cr_questions">
@@ -335,9 +341,11 @@ for(input of inputs){
             }     
         }
      }
-         /************ Validation des inputs de type  radio *********/
+         /************FIN Validation des inputs de type  radio *********/
 
        /*********** Debut Validation des inputs de type Checkbox ************/
+    
+ 
      const Check_buttons=document.querySelectorAll('input[type="checkbox"]');
      var error3=false;
      var compteur1=0;
@@ -368,11 +376,9 @@ for(input of inputs){
             }  
            
         }
-        /*********** Fin Validation des inputs de type Checkbox ************/
- 
-    
-
-    if(error || error1||   error2 || error3){
+         /*************Fin Validation des inputs de type Checkbox ************/
+  
+    if(error || error1||   error2  || error3){
         e.preventDefault();
         return false;
     }

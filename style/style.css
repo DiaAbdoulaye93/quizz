@@ -180,7 +180,7 @@ h1,#h2_creat_quizz{
 }
 #div_principal_cr_admin{
     margin-top: 2%;
-    height: 900px;
+    height: 1000px;
     background-color: rgb(214, 214, 213);
 }
  
@@ -318,6 +318,7 @@ height: 30px;
     font-weight:bold;
  }
  #partie_droite_admin{
+     
      margin-top: 3%;
      margin-left:42%;
      background-color:#f8fdfd;
@@ -365,7 +366,7 @@ height: 30px;
  .questions,.cr_questions{
      margin-top:2%;
      width:100%;
-     height:600px;
+    
      border:2px solid #818181;
      border-radius:5%;
  }
@@ -386,7 +387,7 @@ margin-top: 2%
     -ms-appearance: none;
 }
 .checkbox{
- margin-top:5%;
+ margin-top:1%;
  margin-left:3%;
 width:2%;
 height:10px;

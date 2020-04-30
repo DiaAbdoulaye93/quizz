@@ -34,7 +34,7 @@ else{
           rsort($List_users);
        
         for ($i=$min; $i<=$max; $i++): 
-        if ("joueur"==$List_users[$i]['profil'] && ""!=$List_users[$i]['nom']) {
+        if ("joueur"==$List_users[$i]['profil']) {
            $comp++;
           
            ?>

@@ -9,7 +9,7 @@
 <body>
   
 <form action="" method="POST" id="form1"   enctype="multipart/form-data">
-    <div id="div_principal_cr_admin" >
+    <div id="div_principal_cr_admin">
 <div id="haut">
 <h2 id="h2_creat_quizz">CREER ET PARAMETRER VOS QUIZZ</h2>
 <a href="index.php?statut=logout" id="deconnexion">Deconnexion</a>
@@ -71,7 +71,7 @@ Creer Questions
         switch($_GET['lien1'])
         {
             case "questions":
-           require_once("questions.php");
+           require_once("affichage_questions.php");
             break;
             case "joueurs":
             require_once("pages/joueurs.php");
