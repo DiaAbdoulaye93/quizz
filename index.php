@@ -39,6 +39,7 @@
         if(isset($_GET['statut']) && $_GET['statut']=="logout")
         {
             deconnexion();
+            header("location:index.php");
         }
         require_once("pages/page_connection.php");
     }

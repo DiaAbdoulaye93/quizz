@@ -17,65 +17,7 @@ if(isset($_POST["connection"]))
         
         header("location:index.php?lien=".$result); 
     }
-
-  /*  if(empty($_POST["user"]) && !empty($_POST["pwd"]))
-        {  
-            $pass=$_POST["pwd"];   
-            $message="champ obligatoire";
-        }
-    else if (empty($_POST["pwd"]) && !empty($_POST["user"]))      
-        {   
-            $pseudo=$_POST["user"];    
-            $message1="champ obligatoire";
-        }
-    else if (empty($_POST["pwd"]) && empty($_POST["user"]))  
-        {
-            $message=$message1="champ obligatoire";
-        }
-    else
-       {
-           $pseudo=$_POST["user"];
-           $pass=$_POST["pwd"];
-           $file="../creation_user.json";
-           $js=file_get_contents($file);
-           $js=json_decode($js);
-           for ($i=0; $i <count($js) ; $i++)
-              {
-                 if(($pseudo==$js[$i]->login) && ($pass==$js[$i]->pass))
-                     {
-                         if("admin"==$js[$i]->type_user)
-                            {
-                                 $_SESSION['login'] = $pseudo;
-                                 $prenom=$js[$i]->prenom;
-                                 $nom=$js[$i]->nom;
-                                 $image=$js[$i]->image;
-                                 $_SESSION['prenom']=$prenom ;
-                                 $_SESSION['nom']=$nom;
-                                 $_SESSION['image']=$image;
-                                  header('Location:../creation_admin.php');
-                             }
-                         else
-                            {
-                                  $_SESSION['login'] = $pseudo;
-                                  $prenom=$js[$i]->prenom;
-                                  $nom=$js[$i]->nom;
-                                  $image=$js[$i]->image;
-                                  $_SESSION['prenom']=$prenom ;
-                                  $_SESSION['nom']=$nom;
-                                  $_SESSION['image']=$image;
-                                  header('Location:../interface_joueur.php');
-                             }
-        
-         
-                     }
-                  else
-                     {
-                        $echec= "<h4 style='color:red; margin-top:-2%;margin-left:40%;'>Loggin ou mot de pass invalide<h4>";
-                     }
-                }
-   
-        }*/
-
+ 
 }
  
 ?>

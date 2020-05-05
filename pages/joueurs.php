@@ -52,13 +52,14 @@ else{
          ?>
          </tbody>
      </table>
-     <div>
+      
      <?php
      if($page>1)
      {
          ?>
          
-                      <button type="submit" name="precedent" class="precedent" id="precedent"><a href="index.php?lien=accueil&lien1=joueurs&page=<?= $page-1?>">PRECEDENT</a></button>
+                      <button type="submit" name="precedent" class="precedent" id="precedent">
+                          <a href="index.php?lien=accueil&lien1=joueurs&page=<?= $page-1?>">PRECEDENT</a></button>
         <?php  }   
         else{
             echo "";
@@ -73,7 +74,7 @@ else{
             } 
             ?>
        
-        </div>
+       
     
     </div>
 </div>

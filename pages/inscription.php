@@ -29,6 +29,7 @@
                             if(move_uploaded_file($_FILES["imag"]["tmp_name"], $fch))
                               {           
                                  $informations=array();
+                                 $informations['score']=100000;
                                  $informations['prenom']=$prenom;
                                  $informations['nom']=$nom;
                                  $informations['login']=$login;
@@ -39,7 +40,7 @@
 
                                  if(!isset($_SESSION['statut']))
                                      {
-                                        $informations['score']=0;
+                                       
                                           $informations['profil']="joueur";
                                           $js=file_get_contents('data/creation_user.json');
                                           $js= json_decode($js,true);

@@ -1,7 +1,42 @@
 <?php 
 /*************Recuperation de mes données*******************/
 $Liste_questions=getData("questions");
-
+$message_question="";
+$nombre_question_jeux=getData('question_jeu');
+$quest_jeux=$nombre_question_jeux[0]['question_jeux'];
+if(isset($_POST["sub_question"]))
+{
+    $quest_jeux=$_POST["nombre_question_jeu"];
+    if(empty($quest_jeux))
+    {
+        $message_question="Veuillez fixer les nombre de question par jeux";
+        
+    }
+    else{
+        if(!is_entier($quest_jeux)){
+            $message_question="Veuillez saisir un entier";
+        }
+        else {
+            if($quest_jeux<5)
+            {
+              $message_question="Le nombre de questions par jeux doit etre sup ou égal à 5 ";
+            }
+            else{
+              $question=array();
+              $question['question_jeux']= $quest_jeux;
+              $js[]=$question;
+              $js=json_encode($js);
+              file_put_contents('data/question_jeu.json',$js);     
+              echo "<script> alert('Nombre de question fixé par jeu: $quest_jeux')</script>"; 
+              $message_question="Le nombre de questions par jeux est fixé a ".$quest_jeux;
+            }
+        }
+     
+    }
+}
+ 
+    $nombre=$nombre_question_jeux[0]['question_jeux'];
+ 
 ?>
 <div class="creat_question">
 
@@ -9,13 +44,14 @@ $Liste_questions=getData("questions");
 <div class="list_questions" id="list_questions">
      <div class="nbr_question">
           <label for="">Nbr de Question/Jeu:</label>
-          <input type="text" class="val_question">
-          <input type="submit" value="OK" class="button_question">
+          <input type="text" name='nombre_question_jeu' error="error-1" class="val_question" value="<?php echo $quest_jeux ?>">
+           <input type="submit" name="sub_question" value="OK" class="button_question"><br>
+           <span class="error-form" id="error-1"></span><span style="color:red"><?php echo $message_question ?></span>
       </div>
    
       <div class="questions">
 <?php
-/*****************Declaration et recuperation de ma variables qui me permet de passer a travers les pages *********/
+/*****************Declaration et recuperation de ma variable qui me permet de passer a travers les pages *********/
        if(isset($_GET['page']))
        {
             $page= $_GET['page'];
@@ -28,7 +64,6 @@ $Liste_questions=getData("questions");
 /*****************************Mise en place de mes parametre de pagination************/
      $nbrparPage=5;
      $total=count($Liste_questions);
-     $nombredepages= ceil($total/$nbrparPage);
      $min=($page-1)*$nbrparPage;
      $max=$min+$nbrparPage-1;
      $Mon_compteur=0;
@@ -44,10 +79,10 @@ $Liste_questions=getData("questions");
        else
        {  
            /*****************Pour les question de type texte***************/
-            if("texte"==$Liste_questions[$i]["type"])
+            if($Liste_questions[$i]["type"]=="texte")
               {
-                    $Mon_compteur++;
-                     echo"<h4>".$Mon_compteur.'.'.$Liste_questions[$i]['question']."</h4><input type='text' readonly='readonly' value='".$Liste_questions[$i]['reponse']."'/>";   
+                $Mon_compteur++;
+                echo"<h4>".$Mon_compteur.'.'.$Liste_questions[$i]['question']."</h4><input type='text' readonly='readonly' value='".$Liste_questions[$i]['reponse']."'/>";   
                }
 
                /***************Pour les question a choix simple***************/
@@ -108,7 +143,7 @@ $Liste_questions=getData("questions");
         else{
             echo "";
         } 
-        if($Mon_compteur<$nbrparPage)
+        if($i==$total)
         echo "";
         else{
             ?>
@@ -121,3 +156,42 @@ $Liste_questions=getData("questions");
        
             ?>
 </div>
+
+<script>
+
+   const inputs=document.getElementsByTagName("input");
+for(input of inputs){
+    input.addEventListener("keyup",function(e){
+        if(e.target.hasAttribute('error')){
+            var idDivError=e.target.getAttribute("error");
+            document.getElementById(idDivError).innerText=""
+        }
+     
+    })
+}
+ document.getElementById("form1").addEventListener("submit",function(e)
+ {
+     /*Debut validation des inputs de types text*/
+    const inputs=document.getElementsByTagName("input");
+    var error=false;
+    for(input of inputs){
+        if(input.hasAttribute("error")){
+            var idDivError=input.getAttribute("error");
+            if(!input.value){
+                document.getElementById(idDivError).innerText="Veuillez fixer le nombre de question par jeu";
+                error=true
+            } 
+            else if(input.value<5){
+                document.getElementById(idDivError).innerText="Le nombre de question par jeu doit étre sup ou égal à 5";
+                error=true
+            } 
+         
+        }
+       }
+       /*Fin validation des inputs de types text*/
+       if(error){
+        e.preventDefault();
+        return false;
+    }
+}) 
+</script>

@@ -37,7 +37,7 @@ border:2px solid #f8fdfd;
 }
 
 #haut{
-    background-color: #51bfd0;
+    background-color:rgb(0, 195, 255);
     height:90px;
     padding-top:10px;
     padding-left:5%
@@ -64,16 +64,21 @@ border:2px solid #f8fdfd;
     border: 2px solid gainsboro;
     border-radius:5px;
     padding-top:1.5%;
-    padding-left: 5%;
-  
-   
+    padding-left: 1%;
+    background-color:whitesmoke
+}
+#connection{
+    margin-top:1%;
+    background-color:white 
+    
 }
 #user,#pwd{
     
     width:85%; 
     border: none;
     font-size:20px;
-    background-color:whitesmoke
+    background-color:whitesmoke;
+    font-weight:bold;
      
 }
 #connection,#deconnexion{
@@ -83,10 +88,15 @@ border:2px solid #f8fdfd;
     height:60px;
     width:25%;
     border-radius:5%;
-    background-color: deepskyblue;
+    background-color: rgb(0, 195, 255);
     color: white;
     font-size:20px;
-    
+     
+}
+#button{
+    height:70px;
+    border-radius:7%;
+    margin-left:-1%;
 }
 #button_inscription {
     height:40px;
@@ -95,16 +105,17 @@ border:2px solid #f8fdfd;
 }
 #deconnexion{
     position: absolute;
-   margin-left: 67%;
+   margin-left: 77%;
    border-radius:3%;
-   margin-top:-5%;
-   background-color: rgb(0, 255, 234);
-   height:35px;text-align:center;padding-top:1%;
-   width:20%;
+   margin-top:-5%; 
+   height:40px;
+   background-color: rgb(0, 217, 255);
+   text-align:center;padding-top:0.5%;
+   width:12%;
 }
 
 
-#button_inscription,#suivant{
+#button_inscription{
     border-radius:8%;
      width:20%;
      margin-left:20%
@@ -121,7 +132,7 @@ input,span,h5,a{
     color:grey;
 }
 h2{
-    margin-left:35%;
+    margin-left:25%;
     margin-top:-7%
 }
 h1,#h2_creat_quizz{
@@ -180,7 +191,7 @@ h1,#h2_creat_quizz{
 }
 #div_principal_cr_admin{
     margin-top: 2%;
-    height: 1000px;
+    height: 1200px;
     background-color: rgb(214, 214, 213);
 }
  
@@ -326,17 +337,18 @@ height: 30px;
      padding-left:1%;
      width:53%;
      border-radius:2%;
+     height:1000px;
     
  }
  .affichage_joueurs{
-     width:80%;
-     margin-left:3%;
+     width:90%;
+     margin-left:5%;
      background-color:white;
  }
  .list_questions{
       
-    margin-left:3%;
-    width:80%;
+    margin-left:5%;
+    width:90%;
     height:700px;
     font-family:'Open Sans';
     font-weight:bold;
@@ -372,11 +384,11 @@ height: 30px;
  }
  .cr_questions{
     border:2px solid #5e90af;
-    width:98%;
+    width:90%;
     font-weight:bold;
     font-size:20px;
     color:#818181;
-    padding-left:2%
+    padding-left:5%
  }
 .Q1{
 margin-top: 2%
@@ -414,13 +426,13 @@ border-radius:80%;
     margin-top:5%;
     float:right;
     width:25%;
-    height: 40px;
+    height: 60px;
     font-weight:bold;
-  
+  border-radius:5%;
 
 }
 .precedent{
-    background-color: #dd3a5d;
+   
     float: left;
 }
 #div_principal_user{
@@ -514,7 +526,7 @@ height: 40px;
     border-radius:2%
 }
  .nombre_de_points,.type_de_reponse,.affiche_question{
- margin-top: -6%;
+ margin-top: 0%;
  }
 .pts{
    
@@ -543,14 +555,59 @@ height: 40px;
     background-repeat:no-repeat;
     background-size:cover;
     width:8%;
-    height: 60px;
-    float:right;
-    margin-top:-13%
-  
+    height: 62px;
+    margin-left:90%;
+    border-radius:10%;
+     float:right;
+     margin-top:-12.5%;
  }
  .enregistrer{
  
- margin-top:2%;
- font-weight: inherit;
- margin-left:10%
+ margin-top:5%;
+  
  }
+ #question_i{
+     text-align: center;
+     height: 150px;
+     background-color: #bebfc0a4;
+     width:90%;
+     margin-top:10%;
+     margin-left: 5%;
+     font-size: 20px;
+     border-bottom:1px solid #3addd6;
+     border-right:1px solid #3addd6;
+ }
+ #num_quest{
+color:black;
+text-decoration: underline
+ }
+ #pts_quest{
+    color:black;
+    background-color:#bebfc0a4;
+    margin-left:85%;
+    margin-top:5%;
+    width:10%;
+    text-align: center;
+    border-bottom:1px solid #3addd6;
+    border-right:1px solid #3addd6;
+ }
+ #reponses_i{
+   padding-left:10%;
+   margin-top:2%;
+ }
+
+ .checkbox_rep,.radio_rep{
+    margin-top:1%;
+    margin-left:3%;
+   width:10%;
+   height:30px;
+  
+    }
+    .checkbox_rep{
+        width:4%;
+        border:2px solid #3addd6
+    }
+    #reponse_i{
+        color:black;
+        margin-top:40px;
+    }

@@ -115,7 +115,7 @@ if(isset($_POST['enreg'])){
               Questions
              <input type="text" class="espace_question" name="champ_question" error="error-1" value="<?php echo $QESTION ?>"> 
              <span style="color:red"><?php echo $message_question ?></span>
-             <br><span class="error-form" id="error-1"></span>
+            <span class="error-form" id="error-1"></span>
          </div>
          <br>
          <div class="nombre_de_points">
@@ -135,18 +135,19 @@ if(isset($_POST['enreg'])){
             </select><span style="color:red"><?php echo $message_select ?></span>
             <br><span class="error-form" id="error-3"></span>
 
-           <div id="supprimer" >
+          
            <input id="ic_supprimer" type="button"  >
             
-            </div>
+           
        </div>
        <div class="affiche_question" id="affiche_question">
 
        </div>
     <br><br>   <span style="color:red" class="error-form"><?php echo $error ?></span> 
+    <input type="submit" class="enregistrer" value="Enregistrer" name="enreg" id="enreg">
   </div>
   
-      <input type="submit" class="enregistrer" value="Enregistrer" name="enreg" id="enreg" onclick="return val();">
+    
 </div>
 
 <script>
@@ -179,7 +180,7 @@ var t3=document.getElementById("choix3");
         label.setAttribute('type','button');
         label.setAttribute('value',valuelabel);
         label.setAttribute('id',valuelabel);
-        label.setAttribute('style', 'float:left; font-weight:bold;background-color:white;border:none;margin-top:3%;width:17%;font-size:20px;text-align:left');            
+        label.setAttribute('style', 'float:left; font-weight:bold;background-color:white;border:none;margin-top:5%;width:17%;font-size:20px;text-align:left');            
        /*Cration champ de texte*/
         var texte = document.createElement("input");
         var valuetexte = 'texte'+i;
@@ -187,7 +188,7 @@ var t3=document.getElementById("choix3");
         texte.setAttribute('type','text');
         texte.setAttribute('id',valuetexte);
         texte.setAttribute('error',"error"+i);
-        texte.setAttribute('style', 'margin-left:0%;width:50%;margin-top:3%;');
+        texte.setAttribute('style', 'margin-left:0%;width:50%;margin-top:5%;border-radius:2%');
         /*Creation button radio*/
         var radio = document.createElement("input");
         var valuetexte = 'radio'+i;

@@ -30,11 +30,19 @@ $users=getData();
     return "error"; 
  
 }
+function is_entier($char)
+{
+   return (preg_match("/[0-9]/", $char));
+   
+
+}
+
 function deconnexion()
 {
     unset( $_SESSION["user"]);
     unset( $_SESSION["statut"]);
     session_destroy();
+  
 }
 function is_connect()
 {

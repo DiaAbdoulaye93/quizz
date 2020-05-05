@@ -12,7 +12,7 @@
     <div id="div_principal_cr_admin">
 <div id="haut">
 <h2 id="h2_creat_quizz">CREER ET PARAMETRER VOS QUIZZ</h2>
-<a href="index.php?statut=logout" id="deconnexion">Deconnexion</a>
+<a href="index.php?statut=logout" id="deconnexion">Déconnexion</a>
 </div>
 <div id="div_gauche_create_user">
 <div id="h_gauch_cr_user">
