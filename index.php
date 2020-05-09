@@ -28,6 +28,7 @@
             case "jeux":
             require_once("pages/joueur.php");
             break;
+            
             case "inscription":
             require_once("pages/inscription.php");
             break;

@@ -28,7 +28,7 @@ if(isset($_POST["sub_question"]))
               $js=json_encode($js);
               file_put_contents('data/question_jeu.json',$js);     
               echo "<script> alert('Nombre de question fixé par jeu: $quest_jeux')</script>"; 
-              $message_question="Le nombre de questions par jeux est fixé a ".$quest_jeux;
+             // $message_question="Le nombre de questions par jeux est fixé a ".$quest_jeux;
             }
         }
      
@@ -165,8 +165,7 @@ for(input of inputs){
         if(e.target.hasAttribute('error')){
             var idDivError=e.target.getAttribute("error");
             document.getElementById(idDivError).innerText=""
-        }
-     
+        }   
     })
 }
  document.getElementById("form1").addEventListener("submit",function(e)
@@ -184,8 +183,7 @@ for(input of inputs){
             else if(input.value<5){
                 document.getElementById(idDivError).innerText="Le nombre de question par jeu doit étre sup ou égal à 5";
                 error=true
-            } 
-         
+            }        
         }
        }
        /*Fin validation des inputs de types text*/

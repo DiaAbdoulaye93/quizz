@@ -1,5 +1,5 @@
 body{
-    background-image: url('../img/img-bg.jpg');
+   
     font-family:'Open Sans';
     background-size:cover;
     background-repeat:none
@@ -271,7 +271,8 @@ margin-left:5%;
 
 }
 #div_img_cr_user{
-    background-color:#51bfd0;
+    background-image:linear-gradient(gainsboro, #51bfd0);
+  
     margin-top:7%;
     height:200px;
     padding-top:5%;
@@ -315,14 +316,15 @@ height: 30px;
     margin-left:37%;
     font-style: bold;
     font-size:20px;
-    margin-top:-30%
+    margin-top:-25%
  }
  #nom_avatar{
-     margin-top:-10%;
-     margin-left:10%;
+     margin-top:-7%;
+     margin-left:12%;
  }
  #div_nom_prenom_joueur{
     margin-left:-10%; margin-top:-13%
+    
  }
 .error-form{
     color:red;
@@ -427,12 +429,13 @@ border-radius:80%;
     float:right;
     width:25%;
     height: 60px;
+    border:3PX SOLID #3aafdd;
     font-weight:bold;
   border-radius:5%;
 
 }
 .precedent{
-   
+    width:20%;
     float: left;
 }
 #div_principal_user{
@@ -460,6 +463,13 @@ border-radius:80%;
    border-radius:2%;
    height:630px
 
+}
+#quit{
+    background-color: rgb(240, 84, 84);
+    margin-top:-8.5%;
+    border-radius:5%;
+    margin-left:-10%;
+    border:2px solid rgb(163, 45, 45)
 }
 .joueur_bas_droite{
     font-family: 'Open Sans';
@@ -540,7 +550,7 @@ height: 40px;
     border-right:1px solid #40f8f8;
 }
 .liste_type_reponses{
-    width:63%;
+    width:66%;
     height:60px;
     margin-left:3%;
     border:none;
@@ -554,12 +564,12 @@ height: 40px;
     background-image:url('../img/Icônes/ic-ajout-réponse.png');
     background-repeat:no-repeat;
     background-size:cover;
-    width:8%;
-    height: 62px;
+    width:9%;
+    height: 65px;
     margin-left:90%;
     border-radius:10%;
      float:right;
-     margin-top:-12.5%;
+     margin-top:-10.5%;
  }
  .enregistrer{
  
@@ -594,6 +604,7 @@ text-decoration: underline
  #reponses_i{
    padding-left:10%;
    margin-top:2%;
+   height: 150px;
  }
 
  .checkbox_rep,.radio_rep{
@@ -610,4 +621,55 @@ text-decoration: underline
     #reponse_i{
         color:black;
         margin-top:40px;
+    }
+    .prev {
+        
+        align-self: flex-start;
+        color: white;
+        background-color: #3addd6;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        width: 120px;
+        height: 35px;
+        margin-left: 5px;
+        margin-bottom: 5px
+    }
+
+    .next {
+         
+        float: right;
+
+        margin-right: 10px;
+        color: white;
+        background-color: #3addd6;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        width: 120px;
+        height: 35px;
+        margin-bottom: 5px
+            /* position: relative;
+        top: 10px;
+        left: 60%; */
+
+    }
+
+    .end {
+      
+        margin-right: 10px;
+        float: right;
+        color: white;
+        background-color: #3addd6;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        width: 120px;
+        height: 35px;
+        margin-bottom: 5px
+    }
+    .recapitualion{
+       padding-top: 20px;
+       padding-bottom: 20px;
+        border-bottom:10px solid rgb(191, 201, 203)
     }
