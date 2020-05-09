@@ -36,27 +36,27 @@
     <span>
 Liste des Questions
     </span>
-    <a href="index.php?lien=accueil&lien1=questions"> <img id="icon_gauch1" src="img/icônes/ic-liste.png" alt="" ></a>
+    <a href="index.php?lien=accueil&lien1=questions"> <img id="icon_gauch1" src="img/Icones/ic-liste.png" alt="" ></a>
 </div>
 
 <div id="d2">
     <span>
 Creer un Admin
     </span>
-    <a href="index.php?lien=accueil&lien1=inscription1"><img id="icon_gauch2" src="img/icônes/ic-ajout-active.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=inscription1"><img id="icon_gauch2" src="img/Icones/ic-ajout-active.png" alt=""></a>
 </div>
 
 <div id="d3">
     <span>
 Liste des joueurs
     </span>
-    <a href="index.php?lien=accueil&lien1=joueurs"><img id="icon_gauch3" src="img/icônes/ic-liste.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=joueurs"><img id="icon_gauch3" src="img/Icones/ic-liste.png" alt=""></a>
 </div>
 <div id="d4">
     <span>
 Creer Questions
     </span>
-    <a href="index.php?lien=accueil&lien1=creer_questions"> <img id="icon_gauch4" src="img/icônes/ic-ajout.png" alt=""></a>
+    <a href="index.php?lien=accueil&lien1=creer_questions"> <img id="icon_gauch4" src="img/Icones/ic-ajout.png" alt=""></a>
 </div>
 
 </div>
