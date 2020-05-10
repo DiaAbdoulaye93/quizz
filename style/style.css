@@ -550,7 +550,7 @@ height: 40px;
     border-right:1px solid #40f8f8;
 }
 .liste_type_reponses{
-    width:66%;
+    width:60%;
     height:60px;
     margin-left:3%;
     border:none;
@@ -561,7 +561,7 @@ height: 40px;
 }
  
  #ic_supprimer{
-    background-image:url('../img/Icônes/ic-ajout-réponse.png');
+   
     background-repeat:no-repeat;
     background-size:cover;
     width:9%;
@@ -570,6 +570,7 @@ height: 40px;
     border-radius:10%;
      float:right;
      margin-top:-10.5%;
+    
  }
  .enregistrer{
  

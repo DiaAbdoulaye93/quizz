@@ -136,7 +136,7 @@ if(isset($_POST['enreg'])){
             <br><span class="error-form" id="error-3"></span>
 
           
-           <input id="ic_supprimer" type="button"  >
+           <input id="ic_supprimer" type="button"  style="background-image:url('img/Icones/ic-ajout-reponse.png');" >
             
            
        </div>
@@ -215,7 +215,7 @@ var t3=document.getElementById("choix3");
         bouton.setAttribute('type','button');
         bouton.setAttribute('id',value);
         bouton.setAttribute('onclick','Supp("' + ident + '");');
-        bouton.setAttribute('style', 'margin-left:4%;width:1.5%;margin-top:3.5%;position:absolute;background-image:url("img/Icônes/ic-supprimer.png");background-repeat:no-repeat;height:24px;background-color:white;border:none');
+        bouton.setAttribute('style', 'margin-left:4%;width:1.5%;margin-top:3.5%;position:absolute;background-image:url("img/Icones/ic-supprimer.png");background-repeat:no-repeat;height:24px;background-color:white;border:none');
        
         /*Debut de la generation des champs en fonction des conditions*/
         if(selecteur=="choix1"){ 
